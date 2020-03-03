@@ -17,6 +17,9 @@ class NoteListViewController: UITableViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.loadNotes()
+    
+    NotificationCenter.default.addObserver(self, selector: #selector(self.loadNotes), name: NSNotification.Name(rawValue: "loadNotes"), object: nil)
   }
 
   // MARK: - Table view data source
@@ -37,6 +40,25 @@ class NoteListViewController: UITableViewController {
     cell.textLabel?.text = note.title
 
     return cell
+  }
+  
+  // MARK: - context manipulation methods
+  
+  // TODO: sort by creation date
+  @objc func loadNotes() {
+    // create a new fetch request of type NSFetchRequest<Item> - you must provide a type
+    let fetchRequest: NSFetchRequest<Note> = Note.fetchRequest()
+    
+    // wrap our try statement below in a do/catch block so we can handle any errors
+    do {
+      // fetch our items using our fetch request, save them in our items array
+      notes = try context.fetch(fetchRequest)
+    } catch {
+      print("Error fetching items: \(error)")
+    }
+    
+    // reload our table to reflect any changes
+    tableView.reloadData()
   }
 
   /*

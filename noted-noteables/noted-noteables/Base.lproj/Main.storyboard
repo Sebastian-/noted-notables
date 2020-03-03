@@ -49,7 +49,35 @@
                     <view key="view" contentMode="scaleToFill" id="u07-Jm-DOk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jNn-OK-jvk">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Title" textAlignment="natural" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="XYz-bE-HJW">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="DAX-5H-7yU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TII-Rc-elg">
+                                        <rect key="frame" x="0.0" y="42" width="414" height="732"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jNn-OK-jvk" firstAttribute="top" secondItem="WWT-jO-ko9" secondAttribute="top" id="B3E-2t-dzZ"/>
+                            <constraint firstItem="jNn-OK-jvk" firstAttribute="leading" secondItem="WWT-jO-ko9" secondAttribute="leading" id="Ey9-Eo-KpK"/>
+                            <constraint firstItem="WWT-jO-ko9" firstAttribute="trailing" secondItem="jNn-OK-jvk" secondAttribute="trailing" id="Xhu-W7-TR6"/>
+                            <constraint firstItem="WWT-jO-ko9" firstAttribute="bottom" secondItem="jNn-OK-jvk" secondAttribute="bottom" id="gnI-im-W1f"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WWT-jO-ko9"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Note" id="mk1-Yl-YCE">
@@ -59,6 +87,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="bodyTextView" destination="TII-Rc-elg" id="Wpx-qh-ePD"/>
+                        <outlet property="titleTextField" destination="XYz-bE-HJW" id="Wfb-BO-QUn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hxx-tg-Yz2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
