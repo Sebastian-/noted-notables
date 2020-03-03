@@ -14,6 +14,7 @@
 		9E8962CF240DF0A4004437BB /* noted_noteables.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E8962CD240DF0A4004437BB /* noted_noteables.xcdatamodeld */; };
 		9E8962D1240DF0A5004437BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E8962D0240DF0A5004437BB /* Assets.xcassets */; };
 		9E8962D4240DF0A5004437BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8962D2240DF0A5004437BB /* LaunchScreen.storyboard */; };
+		9E8962DC240DF296004437BB /* NoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8962DB240DF296004437BB /* NoteListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9E8962D0240DF0A5004437BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E8962D3240DF0A5004437BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E8962D5240DF0A5004437BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E8962DB240DF296004437BB /* NoteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				9E8962D2240DF0A5004437BB /* LaunchScreen.storyboard */,
 				9E8962D5240DF0A5004437BB /* Info.plist */,
 				9E8962CD240DF0A4004437BB /* noted_noteables.xcdatamodeld */,
+				9E8962DB240DF296004437BB /* NoteListViewController.swift */,
 			);
 			path = "noted-noteables";
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				9E8962C9240DF0A4004437BB /* ViewController.swift in Sources */,
 				9E8962C5240DF0A4004437BB /* AppDelegate.swift in Sources */,
 				9E8962CF240DF0A4004437BB /* noted_noteables.xcdatamodeld in Sources */,
+				9E8962DC240DF296004437BB /* NoteListViewController.swift in Sources */,
 				9E8962C7240DF0A4004437BB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
