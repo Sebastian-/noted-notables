@@ -3,10 +3,11 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Note List View Controller-->
+        <!--Notes-->
         <scene sceneID="0It-sF-8p8">
             <objects>
                 <tableViewController id="2aK-xx-6mZ" customClass="NoteListViewController" customModule="noted_noteables" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,11 +30,39 @@
                             <outlet property="delegate" destination="2aK-xx-6mZ" id="kiZ-3s-31H"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="dLd-Vr-Zzu"/>
+                    <navigationItem key="navigationItem" title="Notes" id="dLd-Vr-Zzu">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5Ad-aY-vVW">
+                            <connections>
+                                <segue destination="LCg-OF-t8z" kind="show" identifier="addNoteSegue" id="BnM-bu-EDT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pp5-UC-GVa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1208.6956521739132" y="128.57142857142856"/>
+        </scene>
+        <!--Add Note-->
+        <scene sceneID="UED-Bw-LBG">
+            <objects>
+                <viewController id="LCg-OF-t8z" customClass="AddNoteViewController" customModule="noted_noteables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u07-Jm-DOk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="WWT-jO-ko9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Note" id="mk1-Yl-YCE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="lR4-up-J4a">
+                            <connections>
+                                <action selector="doneButtonTapped:" destination="LCg-OF-t8z" id="98p-fc-z51"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hxx-tg-Yz2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2129" y="-137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="j3i-aL-cTR">
