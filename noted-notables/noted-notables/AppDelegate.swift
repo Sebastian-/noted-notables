@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  noted-noteables
+//  noted-notables
 //
 //  Created by Sebastian Murgu on 2020-03-02.
 //  Copyright © 2020 Sebastian Murgu. All rights reserved.
@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        application to it. This property is optional since there are legitimate
        error conditions that could cause the creation of the store to fail.
       */
-      let container = NSPersistentContainer(name: "noted_noteables")
+      let container = NSPersistentContainer(name: "noted_notables")
       container.loadPersistentStores(completionHandler: { (storeDescription, error) in
           if let error = error as NSError? {
               // Replace this implementation with code to handle the error appropriately.

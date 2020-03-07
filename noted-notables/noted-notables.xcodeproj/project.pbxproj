@@ -10,7 +10,7 @@
 		9E8962C5240DF0A4004437BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8962C4240DF0A4004437BB /* AppDelegate.swift */; };
 		9E8962C7240DF0A4004437BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8962C6240DF0A4004437BB /* SceneDelegate.swift */; };
 		9E8962CC240DF0A4004437BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8962CA240DF0A4004437BB /* Main.storyboard */; };
-		9E8962CF240DF0A4004437BB /* noted_noteables.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E8962CD240DF0A4004437BB /* noted_noteables.xcdatamodeld */; };
+		9E8962CF240DF0A4004437BB /* noted_notables.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E8962CD240DF0A4004437BB /* noted_notables.xcdatamodeld */; };
 		9E8962D1240DF0A5004437BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E8962D0240DF0A5004437BB /* Assets.xcassets */; };
 		9E8962D4240DF0A5004437BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8962D2240DF0A5004437BB /* LaunchScreen.storyboard */; };
 		9E8962DC240DF296004437BB /* NoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8962DB240DF296004437BB /* NoteListViewController.swift */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9E8962C1240DF0A4004437BB /* noted-noteables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "noted-noteables.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E8962C1240DF0A4004437BB /* noted-notables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "noted-notables.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E8962C4240DF0A4004437BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E8962C6240DF0A4004437BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9E8962CB240DF0A4004437BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		9E8962B8240DF0A4004437BB = {
 			isa = PBXGroup;
 			children = (
-				9E8962C3240DF0A4004437BB /* noted-noteables */,
+				9E8962C3240DF0A4004437BB /* noted-notables */,
 				9E8962C2240DF0A4004437BB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,12 +52,12 @@
 		9E8962C2240DF0A4004437BB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9E8962C1240DF0A4004437BB /* noted-noteables.app */,
+				9E8962C1240DF0A4004437BB /* noted-notables.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9E8962C3240DF0A4004437BB /* noted-noteables */ = {
+		9E8962C3240DF0A4004437BB /* noted-notables */ = {
 			isa = PBXGroup;
 			children = (
 				9E8962C4240DF0A4004437BB /* AppDelegate.swift */,
@@ -67,18 +67,18 @@
 				9E8962D0240DF0A5004437BB /* Assets.xcassets */,
 				9E8962D2240DF0A5004437BB /* LaunchScreen.storyboard */,
 				9E8962D5240DF0A5004437BB /* Info.plist */,
-				9E8962CD240DF0A4004437BB /* noted_noteables.xcdatamodeld */,
+				9E8962CD240DF0A4004437BB /* noted_notables.xcdatamodeld */,
 				9E8962DB240DF296004437BB /* NoteListViewController.swift */,
 			);
-			path = "noted-noteables";
+			path = "noted-notables";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9E8962C0240DF0A4004437BB /* noted-noteables */ = {
+		9E8962C0240DF0A4004437BB /* noted-notables */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9E8962D8240DF0A5004437BB /* Build configuration list for PBXNativeTarget "noted-noteables" */;
+			buildConfigurationList = 9E8962D8240DF0A5004437BB /* Build configuration list for PBXNativeTarget "noted-notables" */;
 			buildPhases = (
 				9E8962BD240DF0A4004437BB /* Sources */,
 				9E8962BE240DF0A4004437BB /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = "noted-noteables";
+			name = "noted-notables";
 			productName = "noted-noteables";
-			productReference = 9E8962C1240DF0A4004437BB /* noted-noteables.app */;
+			productReference = 9E8962C1240DF0A4004437BB /* noted-notables.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9E8962BC240DF0A4004437BB /* Build configuration list for PBXProject "noted-noteables" */;
+			buildConfigurationList = 9E8962BC240DF0A4004437BB /* Build configuration list for PBXProject "noted-notables" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9E8962C0240DF0A4004437BB /* noted-noteables */,
+				9E8962C0240DF0A4004437BB /* noted-notables */,
 			);
 		};
 /* End PBXProject section */
@@ -146,7 +146,7 @@
 			files = (
 				9E8962C5240DF0A4004437BB /* AppDelegate.swift in Sources */,
 				9E8962DE240DF936004437BB /* AddNoteViewController.swift in Sources */,
-				9E8962CF240DF0A4004437BB /* noted_noteables.xcdatamodeld in Sources */,
+				9E8962CF240DF0A4004437BB /* noted_notables.xcdatamodeld in Sources */,
 				9E8962DC240DF296004437BB /* NoteListViewController.swift in Sources */,
 				9E8962C7240DF0A4004437BB /* SceneDelegate.swift in Sources */,
 			);
@@ -293,13 +293,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "noted-noteables/Info.plist";
+				INFOPLIST_FILE = "noted-notables/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sebastianmurgu.noted-noteables";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sebastianmurgu.noted-notables";
+				PRODUCT_NAME = "noted-notables";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,13 +310,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "noted-noteables/Info.plist";
+				INFOPLIST_FILE = "noted-notables/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sebastianmurgu.noted-noteables";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sebastianmurgu.noted-notables";
+				PRODUCT_NAME = "noted-notables";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -325,7 +325,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9E8962BC240DF0A4004437BB /* Build configuration list for PBXProject "noted-noteables" */ = {
+		9E8962BC240DF0A4004437BB /* Build configuration list for PBXProject "noted-notables" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E8962D6240DF0A5004437BB /* Debug */,
@@ -334,7 +334,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9E8962D8240DF0A5004437BB /* Build configuration list for PBXNativeTarget "noted-noteables" */ = {
+		9E8962D8240DF0A5004437BB /* Build configuration list for PBXNativeTarget "noted-notables" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E8962D9240DF0A5004437BB /* Debug */,
@@ -346,13 +346,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		9E8962CD240DF0A4004437BB /* noted_noteables.xcdatamodeld */ = {
+		9E8962CD240DF0A4004437BB /* noted_notables.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				9E8962CE240DF0A4004437BB /* noted_noteables.xcdatamodel */,
 			);
 			currentVersion = 9E8962CE240DF0A4004437BB /* noted_noteables.xcdatamodel */;
-			path = noted_noteables.xcdatamodeld;
+			path = noted_notables.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
